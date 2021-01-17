@@ -1,0 +1,68 @@
+.container {
+    padding: 2rem;
+    
+}
+
+.country-dropdown-container {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.country-filter {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.country-filter > div {
+    margin-right: 1rem;
+}
+
+.country-dropdown-container button:hover {
+    background-color: #c56b26;
+}
+
+.country-dropdown {
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.countries-container {
+    text-align: left;
+}
+.rsm-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.rsm-svg rect:first-of-type {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 680px) {
+    .main-container {
+        flex-direction: row;
+    }
+
+    .map-container {
+        width: 80%;
+    }
+
+    .countries-container {
+        height: calc(100vh - 200px);
+        overflow: auto;
+        width: 20%;
+    }
+}
